@@ -1,3 +1,4 @@
+alert('');
 let distanciaPecorridaINT = prompt('Qual a distância percorrida da sua casa ate seu trabalho (em km)?');
 let distanciaPecorridaFloat = parseFloat(distanciaPecorridaINT);
 
