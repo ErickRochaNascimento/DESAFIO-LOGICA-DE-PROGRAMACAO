@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/icone.png">
     <title>JS Game</title>
 </head>
 
@@ -16,42 +17,36 @@
     <script>
         let distanciaPecorrida = parseFloat(prompt('Qual a distância percorrida da sua casa ate seu trabalho (em km)?'));
 
-let consumoMedio = parseFloat(prompt('Qual o consumo médio do seu veiculo (em km/L)?'));
+        let consumoMedio = parseFloat(prompt('Qual o consumo médio do seu veiculo (em km/L)?'));
 
-let consumoNecessarioLitros = distanciaPecorrida/consumoMedio;
-let consumoNecessarioLitrosLimitado = consumoNecessarioLitros.toFixed(2);
+        let consumoNecessarioLitros = distanciaPecorrida/consumoMedio;
+        let consumoNecessarioLitrosLimitado = consumoNecessarioLitros.toFixed(2);
 
-let palavraLitro = consumoNecessarioLitros > 1 ? 'litros' : 'litro';
-alert(`O consumo necessario ${consumoNecessarioLitrosLimitado} ${palavraLitro}`);
+        let palavraLitro = consumoNecessarioLitros > 1 ? 'litros' : 'litro';
+        alert(`O consumo necessario ${consumoNecessarioLitrosLimitado} ${palavraLitro}`);
 
-const quantidadeDePostos = parseInt(prompt('Em quantos postos você pesquisou?'));
+        const quantidadeDePostos = parseInt(prompt('Em quantos postos você pesquisou?'));
 
-let somaTotalValores = 0;
-let menorValor = Infinity;
+        let somaTotalValores = 0;
+        let menorValor = Infinity;
 
-for(let i = 1; i <= quantidadeDePostos; i++){
-    const valorCombustivelPosto = parseFloat(prompt(`Digite o preço no ${i}° posto:`));
+        for(let i = 1; i <= quantidadeDePostos; i++){
+            const valorCombustivelPosto = parseFloat(prompt(`Digite o preço no ${i}° posto:`));
 
-    somaTotalValores += valorCombustivelPosto;
-    if(valorCombustivelPosto <= menorValor){
-        menorValor = valorCombustivelPosto;
-    }
-}
-let menorValorLimitado = menorValor.toFixed(2);
-
-
-let media = somaTotalValores/quantidadeDePostos;
-
-let gastoDiario = 2*(consumoNecessarioLitrosLimitado*menorValor);
-let gastoDiarioLimitado = gastoDiario.toFixed(1);
+            somaTotalValores += valorCombustivelPosto;
+            if(valorCombustivelPosto <= menorValor){
+                menorValor = valorCombustivelPosto;
+            }
+        }
+        let menorValorLimitado = menorValor.toFixed(2);
 
 
+        let media = somaTotalValores/quantidadeDePostos;
 
-alert(`O consumo necessario é ${consumoNecessarioLitrosLimitado} ${palavraLitro}\n O menor valor pesquisado é ${menorValorLimitado}\n A média dos valores pesquisados é ${media}\n O gasto diário (ida e volta) é R$${gastoDiarioLimitado}`);
+        let gastoDiario = 2*(consumoNecessarioLitrosLimitado*menorValor);
+        let gastoDiarioLimitado = gastoDiario.toFixed(1);
 
-
-
-
+        alert(`O consumo necessario é ${consumoNecessarioLitrosLimitado} ${palavraLitro}\n O menor valor pesquisado é ${menorValorLimitado}\n A média dos valores pesquisados é ${media}\n O gasto diário (ida e volta) é R$${gastoDiarioLimitado}`);
     </script>
 </body>
 
