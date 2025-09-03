@@ -31,8 +31,5 @@ let gastoDiarioLimitado = gastoDiario.toFixed(1);
 
 
 
-alert(`O consumo necessario é ${consumoNecessarioLitrosLimitado} ${palavraLitro}`);
-alert(`O menor valor pesquisado é ${menorValorLimitado}`);
-alert(`A média dos valores pesquisados é ${media}`);
-alert(`O gasto diário (ida e volta) é R$${gastoDiarioLimitado}`);
+alert(`O consumo necessario é ${consumoNecessarioLitrosLimitado} ${palavraLitro}\n O menor valor pesquisado é ${menorValorLimitado}\n A média dos valores pesquisados é ${media}\n O gasto diário (ida e volta) é R$${gastoDiarioLimitado}`);
 
