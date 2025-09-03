@@ -1,31 +1,20 @@
-let distanciaPecorridaINT = prompt('Qual a distância percorrida da sua casa ate seu trabalho (em km)?');
-let distanciaPecorridaFloat = parseFloat(distanciaPecorridaINT);
+let distanciaPecorrida = parseFloat(prompt('Qual a distância percorrida da sua casa ate seu trabalho (em km)?'));
 
-let consumoMedioINT = prompt('Qual o consumo médio do seu veiculo (em km/L)?');
-let consumoMedioFloat = parseFloat(consumoMedioINT);
+let consumoMedio = parseFloat(prompt('Qual o consumo médio do seu veiculo (em km/L)?'));
 
-let consumoNecessarioLitros = distanciaPecorridaFloat/consumoMedioFloat;
+let consumoNecessarioLitros = distanciaPecorrida/consumoMedio;
 
-//Formatando numero com toFixed
-let consumoNecLiFormatado = consumoNecessarioLitros.toFixed(2);
-
-
-let litro = consumoNecLiFormatado > 1 ? 'litros' : 'litro';
-alert(`O consumo necessario ${consumoNecLiFormatado} ${litro}`);
-
+let palavraLitro = consumoNecessarioLitros > 1 ? 'litros' : 'litro';
+alert(`O consumo necessario ${consumoNecessarioLitros} ${palavraLitro}`);
 
 const quantidadeDePostos = parseInt(prompt('Em quantos postos você pesquisou?'));
 
-
 let somaTotalValores = 0;
 
-
-for ( let i = 1; i <= quantidadePostos; i++){
-    const valorCombustivelPosto = parseFloat(prompt(`Digite o valor (em R$) encontrado no posto ${i}:`));
+for(let i = 1; i <= quantidadeDePostos; i++){
+    const valorCombustivelPosto = parseFloat(prompt(`Digite o preço no ${i}° posto:`));
 
     somaTotalValores += valorCombustivelPosto;
 }
 
 alert(`${somaTotalValores}`);
-
-
