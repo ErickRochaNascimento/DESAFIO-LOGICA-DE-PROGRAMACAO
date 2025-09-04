@@ -60,8 +60,21 @@
 <body>
     <script>
             let distanciaPecorrida = parseFloat(prompt('Qual a distância percorrida da sua casa ate seu trabalho (em km)?'));
+            do {
+                distanciaPecorrida = parseFloat(prompt('Qual a distância percorrida da sua casa até o trabalho (em km)?'));
+                if (isNaN(distanciaPecorrida) || distanciaPecorrida <= 0) {
+                    alert("Por favor, insira um número válido.");
+                }
+            } while (isNaN(distanciaPecorrida) || distanciaPecorrida <= 0);
+
 
             let consumoMedio = parseFloat(prompt('Qual o consumo médio do seu veiculo (em km/L)?'));
+            do {
+                consumoMedio = parseFloat(prompt('Qual a distância percorrida da sua casa até o trabalho (em km)?'));
+                if (isNaN(consumoMedio) || consumoMedio <= 0) {
+                    alert("Por favor, insira um número válido.");
+                }
+            } while (isNaN(consumoMedio) || consumoMedio <= 0);
 
             let consumoNecessarioLitros = distanciaPecorrida/consumoMedio;
             let consumoNecessarioLitrosLimitado = consumoNecessarioLitros.toFixed(2);
@@ -70,6 +83,12 @@
             alert(`O consumo necessario ${consumoNecessarioLitrosLimitado} ${palavraLitro}`);
 
             const quantidadeDePostos = parseInt(prompt('Em quantos postos você pesquisou?'));
+            do {
+                quantidadeDePostos = parseFloat(prompt('Qual a distância percorrida da sua casa até o trabalho (em km)?'));
+                if (isNaN(quantidadeDePostos) || quantidadeDePostos <= 0) {
+                    alert("Por favor, insira um número válido.");
+                }
+            } while (isNaN(quantidadeDePostos) || quantidadeDePostos <= 0);
 
             let somaTotalValores = 0;
             let menorValor = Infinity;
