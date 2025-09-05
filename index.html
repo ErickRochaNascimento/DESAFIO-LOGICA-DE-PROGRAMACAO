@@ -70,7 +70,7 @@
 
             let consumoMedio = parseFloat(prompt('Qual o consumo médio do seu veiculo (em km/L)?'));
             do {
-                consumoMedio = parseFloat(prompt('Qual a distância percorrida da sua casa até o trabalho (em km)?'));
+                consumoMedio = parseFloat(prompt('Qual o consumo médio do seu veiculo (em km/L)?'));
                 if (isNaN(consumoMedio) || consumoMedio <= 0) {
                     alert("Por favor, insira um número válido.");
                 }
@@ -102,6 +102,7 @@
                 }
             }
             let menorValorLimitado = menorValor.toFixed(2);
+
 
 
             let media = somaTotalValores/quantidadeDePostos;
