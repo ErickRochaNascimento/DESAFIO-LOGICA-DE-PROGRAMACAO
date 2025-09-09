@@ -25,15 +25,12 @@
             font-size: 18px;
             line-height: 1.6;
             padding: 40px;
-            text-align: center;
+            text-align: left;
             min-height: 100vh;
         }
 
-        h1,
-        h2,
-        h3 {
+        h1, h2, h3 {
             font-family: 'Chakra Petch', sans-serif;
-            margin-bottom: 20px;
         }
 
         body br {
@@ -75,7 +72,7 @@
         let consumoMedio = corrigirNumero('Digite o consumo médio do seu veiculo (em km/L)?');
 
         let consumoNecessarioLitros = divisao(distanciaPecorrida, consumoMedio);
-        mostrarTexto("O consumo necessario é " + consumoNecessarioLitros.toFixed(2) + " litros");
+        mostrarTexto("Consumo necessario: " + consumoNecessarioLitros.toFixed(2) + " litros");
 
         let quantidadeDePostos = parseInt(prompt('Digite a quantidade de postos pesquisados:'));
 
@@ -100,9 +97,9 @@
 
         let gastoDiario = 2 * (consumoNecessarioLitros * menorValor);
 
-        mostrarTexto(`O menor valor pesquisado é ${menorValor.toFixed(2)}`);
-        mostrarTexto(`A média dos valores pesquisados é ${media.toFixed(2)}`);
-        mostrarTexto(`O gasto diário (ida e volta) é R$${gastoDiario.toFixed(2)}`);
+        mostrarTexto(`Menor valor pesquisado: ${menorValor.toFixed(2)}`);
+        mostrarTexto(`Média dos valores pesquisados: ${media.toFixed(2)}`);
+        mostrarTexto(`O gasto diário (ida e volta): R$${gastoDiario.toFixed(2)}`);
     </script>
 </body>
 
