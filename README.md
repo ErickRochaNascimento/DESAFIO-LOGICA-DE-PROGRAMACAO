@@ -31,7 +31,6 @@ DESAFIO-LOGICA-DE-PROGRAMACAO/
 ## 🧑‍💻 Autor
 
 **Erick Rocha Nascimento**  
-📘 Desenvolvido como projeto prático de estudo de **APIs e JavaScript**.  
 🔗 [LinkedIn](https://www.linkedin.com/in/erickrochanascimento) | [GitHub](https://github.com/ErickRochaNascimento)
 
 
