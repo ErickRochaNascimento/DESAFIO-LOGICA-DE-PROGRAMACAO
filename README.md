@@ -22,22 +22,16 @@ O objetivo principal era aplicar conceitos de lógica de programação, como est
 
 ```
 DESAFIO-LOGICA-DE-PROGRAMACAO/
-├── DESAFIO_INGLES ERICK NASCIMENTO.html # Arquivo principal do quiz
+├── DESAFIO_INGLES ERICK NASCIMENTO.html 
 ├── README.md
 └── img/
 ```
 
-## ▶️ Como Visualizar
 
-1.  **Clone o repositório:**
-    ```bash
-    git clone https://github.com/ErickRochaNascimento/DESAFIO-LOGICA-DE-PROGRAMACAO.git
-    cd DESAFIO-LOGICA-DE-PROGRAMACAO
-    ```
-2.  **Abra o arquivo `DESAFIO_INGLES ERICK NASCIMENTO.html`** no seu navegador.
+## 🧑‍💻 Autor
 
-## 👤 Autor
+**Erick Rocha Nascimento**  
+📘 Desenvolvido como projeto prático de estudo de **APIs e JavaScript**.  
+🔗 [LinkedIn](https://www.linkedin.com/in/erickrochanascimento) | [GitHub](https://github.com/ErickRochaNascimento)
 
-**Erick Rocha Nascimento**
-*   [LinkedIn](https://www.linkedin.com/in/erickrochanascimento)
-*   [GitHub](https://github.com/ErickRochaNascimento)
+
